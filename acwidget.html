@@ -107,8 +107,59 @@
   amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#ff8040' }, closeChat: { color: '#ffffff', backgroundColor: '#ff8040'} });
   amazon_connect('snippetId', 'QVFJREFIZ3JjM0V2VVBOckdYcW1jeFRyRHU0N1IwL0hXQXhoMlF6RE5FSm4wc01nUUFFRnZ4eHJabVRyQXdDL3JSdEIwU1V3QUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNbmNjd1JpTDJTRFl2R1dHL0FnRVFnQ3RuMHZqTXRPZURVak0xZGV3VVZHVzR4TFZydk43VGYyaVUzSU9jUUNWbGdHQWk0S2J4Ynk0amFUMk86Ok9YOEJIVlc1MHcxMUsySmtTOEVCR3gxeFhEQ1c3MW9GcUZhcEVXNk1wakdnYkI3RjlrV0hDWXRYMnpZNkRFOWN6bGE2OHF2YzNSYzRwakFjcFNmVFkrSFYyL3FpTzdPM1hmTm9hNWg3MzVsK2ZPdW9zZTdxMkx2anUzTHg2RnErdnBsd1JuT01LbndHOEx3UTFKZ3VtMW12UVJybldhZz0=');
   amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+   amazon_connect('contactAttributes', {
+   foo: 'bar',
+   firstName: 'Han', 
+     lastName: 'Solo', 
+  });
+  amazon_connect('customStyles', {
+ global: {
+     frameWidth: '400px',
+     frameHeight: '700px',
+     textColor: '#fe3251',
+     fontSize: '20px',
+     footerHeight: '120px',
+     typeface: "'AmazonEmber-Light', serif",
+     customTypefaceStylesheetUrl: "https://ds6yc8t7pnx74.cloudfront.net/etc.clientlibs/developer-portal/clientlibs/main/css/resources/fonts/AmazonEmber_Lt.ttf",
+     headerHeight: '120px',
+ },
+ header: {
+     headerTextColor: '#541218',
+     headerBackgroundColor: '#fe3',
+ },
+ transcript: {
+     messageFontSize: '13px',
+     messageTextColor: '#fe3',
+     widgetBackgroundColor: '#964950',
+     agentMessageTextColor: '#ef18d3',
+     systemMessageTextColor: '#ef18d3',
+     customerMessageTextColor: '#ef18d3',
+     agentChatBubbleColor: '#111112',
+     systemChatBubbleColor: '#111112',
+     customerChatBubbleColor: '#0e80f2',
+ },
+ footer: {
+     buttonFontSize: '20px',
+     buttonTextColor: '#ef18d3',
+     buttonBorderColor: '#964950',
+     buttonBackgroundColor: '#964950',
+     footerBackgroundColor: '#0e80f2',
+     startCallButtonTextColor: '#541218',
+     startChatButtonBorderColor: '#fe3',
+     startCallButtonBackgroundColor: '#fe3',
+ },
+ logo: {
+     logoMaxHeight: '61px',   
+     logoMaxWidth: '99%',
+ },
+  composer: {
+     fontSize: '20px', 
+ },
+  fullscreenMode: true // Enables fullscreen mode on the widget when a mobile screen size is detected in a web browser.
+});
 </script>
     <!-- Chat Widget Above -->
   </body>
 </html>
+
 
