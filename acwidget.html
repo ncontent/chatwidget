@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC Test Chat</title>
+    <script type="text/javascript">
+      (function (w, d, x, id) {
+        s = d.createElement("script");
+        s.src =
+          "https://acacstudent07jan2026.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js";
+        s.async = 1;
+        s.id = id;
+        d.getElementsByTagName("head")[0].appendChild(s);
+        w[x] =
+          w[x] ||
+          function () {
+            (w[x].ac = w[x].ac || []).push(arguments);
+          };
+      })(
+        window,
+        document,
+        "amazon_connect",
+        "8dde2610-2192-4bb7-a659-292359fbeea8",
+      );
+      amazon_connect("styles", {
+        iconType: "CHAT",
+        openChat: { color: "#ffffff", backgroundColor: "#123456" },
+        closeChat: { color: "#ffffff", backgroundColor: "#123456" },
+      });
+      amazon_connect(
+        "snippetId",
+        "QVFJREFIZ3JjM0V2VVBOckdYcW1jeFRyRHU0N1IwL0hXQXhoMlF6RE5FSm4wc01nUUFFRnZ4eHJabVRyQXdDL3JSdEIwU1V3QUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNbmNjd1JpTDJTRFl2R1dHL0FnRVFnQ3RuMHZqTXRPZURVak0xZGV3VVZHVzR4TFZydk43VGYyaVUzSU9jUUNWbGdHQWk0S2J4Ynk0amFUMk86Ok9YOEJIVlc1MHcxMUsySmtTOEVCR3gxeFhEQ1c3MW9GcUZhcEVXNk1wakdnYkI3RjlrV0hDWXRYMnpZNkRFOWN6bGE2OHF2YzNSYzRwakFjcFNmVFkrSFYyL3FpTzdPM1hmTm9hNWg3MzVsK2ZPdW9zZTdxMkx2anUzTHg2RnErdnBsd1JuT01LbndHOEx3UTFKZ3VtMW12UVJybldhZz0=",
+      );
+      amazon_connect("supportedMessagingContentTypes", [
+        "text/plain",
+        "text/markdown",
+        "application/vnd.amazonaws.connect.message.interactive",
+        "application/vnd.amazonaws.connect.message.interactive.response",
+      ]);
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to AC Test Chat</h1>
+    <p>This is a simple chat application interface.</p>
+  </body>
+</html>
